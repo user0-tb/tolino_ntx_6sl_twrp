@@ -1,6 +1,6 @@
-# TWRP for Tolino eInk reader devices
+# SHRP for Tolino eInk reader devices
 ### State
-TWRP builds and is fully functional (hopefully).
+SHRP builds and is fully functional (hopefully).
 
 ### Known working devices
 - Tolino Page
@@ -33,11 +33,11 @@ TWRP builds and is fully functional (hopefully).
 4) wait while device turns on while holding both buttons;
 
 ### How to build TWRP
-1. `repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0`
+1. `repo init --depth=1 -u https://github.com/SHRP/manifest.git -b v3_9.0`
 2. `repo sync -n -j 1 && repo sync -l -j 4`
-3. `clone this repo to <twrp_repo>/device/TOLINO/tolino_generic`
-4. apply patches from `<twrp_repo>/device/TOLINO/tolino_generic/patches` directory
-5. open terminal in `<twrp_repo>` directory;
+3. `clone this repo to <shrp_repo>/device/TOLINO/tolino_generic`
+4. apply patches from `<shrp_repo>/device/TOLINO/tolino_generic/patches` directory
+5. open terminal in `<shrp_repo>` directory;
 6. `. build/envsetup.sh`
 7. `lunch omni_tolino_generic-userdebug`
 8. `mka recoveryimage`
