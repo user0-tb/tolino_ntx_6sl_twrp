@@ -33,7 +33,7 @@ TWRP builds and is fully functional (hopefully).
 4) wait while device turns on while holding both buttons;
 
 ### How to build TWRP
-1. `repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-5.1`
+1. `repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0`
 2. `repo sync -n -j 1 && repo sync -l -j 4`
 3. `clone this repo to <twrp_repo>/device/TOLINO/tolino_generic`
 4. apply patches from `<twrp_repo>/device/TOLINO/tolino_generic/patches` directory
