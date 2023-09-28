@@ -34,7 +34,7 @@ SHRP builds and is fully functional (hopefully).
 
 ### How to build TWRP
 1. `repo init --depth=1 -u https://github.com/SHRP/manifest.git -b v3_9.0`
-2. `repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags`
+2. `repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 3. `clone this repo to <shrp_repo>/device/TOLINO/tolino_generic`
 4. apply patches from `<shrp_repo>/device/TOLINO/tolino_generic/patches` directory
 5. open terminal in `<shrp_repo>` directory;
@@ -43,7 +43,7 @@ SHRP builds and is fully functional (hopefully).
 8. `mka recoveryimage`
 
 if you want to enable A2 mode:
-1. clone [monochrome theme repo](https://github.com/Ryogo-Z/twrp_monochrome_portrait_hdpi_theme/) into `<twrp_repo>/device/TOLINO/tolino_generic/theme`
+1. clone [monochrome theme repo](https://github.com/Ryogo-Z/twrp_monochrome_portrait_hdpi_theme/) into `<shrp_repo>/device/TOLINO/tolino_generic/theme`
 2. uncomment `TW_IMX_EINK_MONOCHROME` in `BoardConfig.mk`
 
 if everything is successful you should find built recovery by path <twrp_repo>/out/target/product/tolino_generic/recovery.img
