@@ -34,7 +34,7 @@ SHRP builds and is fully functional (hopefully).
 
 ### How to build TWRP
 1. `repo init --depth=1 -u https://github.com/SHRP/manifest.git -b v3_9.0`
-2. `repo sync -n -j 1 && repo sync -l -j 4`
+2. `repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags`
 3. `clone this repo to <shrp_repo>/device/TOLINO/tolino_generic`
 4. apply patches from `<shrp_repo>/device/TOLINO/tolino_generic/patches` directory
 5. open terminal in `<shrp_repo>` directory;
